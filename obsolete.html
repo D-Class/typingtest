@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>KnockOffType</title>
+    </head>
+    <body>
+        <nav id="menu">
+            <a class="navLinks" id="title">KnockOffType</a>
+            <a class="navLinks" id="speedTest" class="testLinks">Speed Test</a>
+            <a class="navLinks" id="advancedTest" class="testLinks">Advanced Test</a>
+        </nav>
+        
+        <h1>Just your average typing website, nothing to see here, except your typing speed.</h1>
+
+        <a href="advanced.html" id="testLink" style="margin-top: 15%;">Test now!</a>
+
+        <div id="transitionTest"></div>
+    </body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');,
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        * {
+            font-family: var(--font), sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: var(--dark-color);
+            color: var(--bright-color);
+        }
+
+        h1 {
+            font-family: var(--font);
+            margin-left: 10%;
+            margin-right: 35%;
+            margin-top: 5%;
+            font-size: 7vmin;
+        }
+
+        :root {
+            --bright-color: #f33;
+            --dark-color: #002;
+            --font: "Roboto";
+        }
+
+        #menu {
+            font-size: 3vmin;
+            padding: 3vmin;
+            height: 3vmin;
+            line-height: 100%;
+            background-color: var(--bright-color);
+            text-align: right;
+            font-family: var(--font), sans-serif;
+        }
+
+        .navLinks {
+            color: var(--dark-color);
+            text-decoration: none;
+            text-shadow: var(--dark-color) 0 0; 
+            margin: 0 .75vmin;
+            font-weight: 600;
+            font-size: 3vmin;
+            transition: font-size .5s, text-shadow .5s;
+        }
+
+        .navLinks:hover {
+            text-shadow: var(--dark-color) 0 0 .5vmin;
+            font-size: 3.5vmin;
+        }
+
+        /* .navLinks:hover {
+            font-size: 3.5vmin;
+            animation-name: hoverOnLinks;
+            animation-duration: .5s;
+            text-shadow: var(--dark-color) 0 0 .5vmin;
+        } */
+
+        /* .navLinks:not(:hover){
+            font-size: 3vmin;
+            animation-name: hoverOffLinks;
+            animation-duration: .5s;
+        } */
+
+        #title {
+            float: left;
+
+        }
+
+        /* @keyframes hoverOnLinks {
+            from{
+                font-size: 3vmin;
+            }
+            to {
+                font-size: 3.5vmin;
+                text-shadow: var(--dark-color) 0 0 .375vmin;
+            }
+        }
+        
+        @keyframes hoverOffLinks {
+            to{
+                font-size: 3vmin;
+            }
+            from {
+                font-size: 3.5vmin;
+                text-shadow: var(--dark-color) 0 0 .375vmin;
+            }
+        }
+
+        @keyframes hoverOnTestLinkButton {
+            to {
+                font-size: 5.5vmin;
+                padding: 2.5vmin;
+            }   
+            
+            from {
+                font-size: 5vmin;
+                padding: 2vmin;
+            }
+        }
+
+        @keyframes hoverOffTestLinkButton {
+            from {
+                font-size: 5.5vmin;
+                padding: 2.5vmin;
+            }   
+            
+            to {
+                font-size: 5vmin;
+                padding: 2vmin;
+            }
+        } */
+
+        .testLinks{
+            font-size: 2vmin;
+        }
+
+
+        #testLink {
+            margin-left: 10%;
+            color: var(--dark-color);
+            background-color: var(--bright-color);
+            border: none;
+            border-radius: 1vmin;
+            font-size: 5vmin;
+            padding: 2vmin;
+            margin-top: 3% !important;
+            font-family: var(--font);
+            font-weight: 700;
+            text-decoration: none;
+            float: left;
+            text-align: center;
+            box-shadow: #0000 0;
+            transition: margin-left .5s, padding .5s, margin-top .5s, font-size .5s, box-shadow .5s;
+        }
+
+        #testLink:hover {
+            margin-left: 8.5%;
+            padding: calc(2vmin * 1.15);
+            margin-top: calc(3% / 1.15) !important;
+            font-size: calc(5vmin * 1.15);
+            box-shadow: var(--bright-color) 0vh 0vh 3vmin;
+        }
+
+        /* #testLink:hover {
+            animation-name: hoverOnTestLinkButton;
+            animation-duration: .5s;
+            font-size: 5.5vmin;
+            padding: 2.5vmin;
+        }
+
+        #testLink:not(:hover) {
+            animation-name: hoverOffTestLinkButton;
+            animation-duration: .5s;
+            font-size: 5vmin;
+            padding: 2vmin;
+        } */
+/* 
+        h1::first-letter {
+            font-size: 10.5vmin;
+            font-weight: 700;
+            cursor: cell;
+            color: var(--dark-color);
+            text-shadow: 0 0 2vmin var(--bright-color), 0 0 2vmin var(--bright-color), 0 0 3vmin var(--bright-color);
+        } */
+
+        #transitionTest {
+            width: 100px;
+            height: 100px;
+            transition: 
+        }
+
+        #transitionTest:hover {
+            width: 150px;
+            height: 150px;
+        }
+
+    </style>
+</html>
